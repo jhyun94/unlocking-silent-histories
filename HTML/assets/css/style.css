@@ -315,9 +315,14 @@ a:hover, a:focus, a:active {
 }
 .team-member .member-name {
   font-weight: bold;
+  text-decoration: underline;
 }
 .team-member .member-position {
   padding: 0 15px 5px;
+}
+
+.member-name:hover {
+  cursor: pointer;
 }
 
 /* footer 
