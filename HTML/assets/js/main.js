@@ -192,6 +192,18 @@ $(function(){
 		
 	}
 
+  // Teams page - open a bio for each member
+
+  $(".member-name").on("click", function(){
+    var id = this.id;
+    debugger;
+    $(".bio-"+id).show();
+  })
+
+  $(".close").on("click", function(){
+    $(".modal").hide();
+  })
+
 });
 
 
