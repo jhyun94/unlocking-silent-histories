@@ -196,7 +196,6 @@ $(function(){
 
   $(".member-name").on("click", function(){
     var id = this.id;
-    debugger;
     $(".bio-"+id).show();
   })
 
