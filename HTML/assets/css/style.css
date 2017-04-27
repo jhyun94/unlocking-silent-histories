@@ -377,6 +377,10 @@ a:hover, a:focus, a:active {
 .form-btn {
   display: block;
   margin: 20px auto;
+  background-color: #338E89;
+  color: #fff;
+  padding: 10px 25px;
+  border: 1px solid transparent;
 }
 
 
