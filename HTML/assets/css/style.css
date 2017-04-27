@@ -372,6 +372,13 @@ a:hover, a:focus, a:active {
     cursor: pointer;
 }
 
+/* collaborate form button
+======== */
+.form-btn {
+  display: block;
+  margin: 20px auto;
+}
+
 /* footer 
 ================================= */
 .footer-top {
