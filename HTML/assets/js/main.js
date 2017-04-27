@@ -331,7 +331,15 @@ $(function(){
                 <label for="phone">Phone</label> \
                 <input type="text" class="phone"> \
 
-              
+                <label for="partner-name">Name of Partner</label> \
+                <input type="text" class="partner-name">
+
+                <label for="choice">Partner Type</label> \
+                <select class="choice"> \
+                <option value=""></option> \
+                <option value="organization">Nonprofit/organization</option> \
+                <option value="individual">Financial/individual</option> \
+                </select> \
 
                 <label for="message">Message</label> \
                 <textarea class="message"></textarea> \
