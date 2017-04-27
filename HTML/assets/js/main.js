@@ -215,32 +215,78 @@ $(function(){
   function createForm(type){
     switch(type){
       case "host":
-        return `<form> \
+        return `<form class="forms"> \
                 <label for="name">Name</label> \
-                <input type="text" id="name"> \
+                <input type="text" class="name"> \
 
                 <label for="email">Email</label> \
-                <input type="email" id="email"> \
+                <input type="email" class="email"> \
 
                 <label for="phone">Phone</label> \
-                <input type="text" id="phone"> \
+                <input type="text" class="phone"> \
 
                 <label for="event-type">Type of Event</label> \
-                <input type="text" id="event-type">\
+                <input type="text" class="event-type">\
 
                 <label for="location">Location</label> \
-                <input type="text" id="location">\
+                <input type="text" class="location">\
 
                 <label for"date">Date</label> \
-                <input type="text" id="date" placeholder="mm/dd/year - mm/dd/year"> \
+                <input type="text" class="date" placeholder="mm/dd/year - mm/dd/year"> \
 
                 <label for="idea">Tell us about your idea and what help you need</label> \
-                <textarea id="idea"></textarea>\
+                <textarea class="idea"></textarea>\
 
                 <label for="message">Message</label> \
-                <textarea id="message"></textarea> \
+                <textarea class="message"></textarea> \
 
-                <button type="submit" id="form-btn">Submit</button> \
+                <button type="submit" class="submit-btn">Submit</button> \
+                </form>`
+        break;
+        case "volunteer":
+        return `<form class="forms"> \
+                <label for="name">Name</label> \
+                <input type="text" class="name"> \
+
+                <label for="email">Email</label> \
+                <input type="email" class="email"> \
+
+                <label for="phone">Phone</label> \
+                <input type="text" class="phone"> \
+
+                <label for="opportunity-type">Type of Oppotunity</label> \
+                <select class="opportunity-options"> \
+                <option value=""></option> \
+                <option value="country">In Country</option> \
+                <option value="course-credit">Course Credit</option> \
+                <option value="internship">Internship</option> \
+                <option value="virtual">Virtual</option> \
+                <option value="research">Research</option>\
+                </select> \
+
+                <label for="spanish">Do you speak spanish</label> \
+                <select class="spanish"> \
+                <option value=""></option>\
+                <option value="yes">Yes</option>\
+                <option value="no">No</option> \
+                </select>\
+
+                <label for="fluent">If yes, what is your level?</label> \
+                <select class="fluent"> \
+                <option value=""></option>\
+                <option value="beginner">Beginner</option>\
+                <option value="intermediate">Intermediate</option>\
+                <option value="fluent">Fluent</option>\
+                </select>\
+
+
+                <label for="date">Date</label> \
+                <input type="text" class="date" placeholder="mm/dd/year - mm/dd/year">\
+
+                <label for="message">Message</label> \
+                <textarea class="message"></textarea> \
+
+                <button type="submit" class="submit-btn">Submit</button> \
                 </form>`
         break;
     }
