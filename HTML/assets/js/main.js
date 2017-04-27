@@ -289,6 +289,56 @@ $(function(){
                 <button type="submit" class="submit-btn">Submit</button> \
                 </form>`
         break;
+        case "fundraise":
+        return `<form class="forms"> \
+                <label for="name">Name</label> \
+                <input type="text" class="name"> \
+
+                <label for="email">Email</label> \
+                <input type="email" class="email"> \
+
+                <label for="phone">Phone</label> \
+                <input type="text" class="phone"> \
+
+                <label for="type">Type</label> \
+                <select class="type"> \
+                <option value=""></option> \
+                <option value="party">Party</option> \
+                <option value="event">Event</option> \
+                <option value="crowdsourcing">crowdsourcing</option> \
+                </select> \
+
+                <label for="location">Location</label> \
+                <input type="text" class="location"> \
+
+                <label for"date">Date</label> \
+                <input type="text" class="date" placeholder="mm/dd/year - mm/dd/year"> \
+
+                <label for="message">Message</label> \
+                <textarea class="message"></textarea> \
+
+                <button type="submit" class="submit-btn">Submit</button> \
+                </form>`
+        break;
+        case "partner":
+        return `<form class="forms"> \
+                <label for="name">Name</label> \
+                <input type="text" class="name"> \
+
+                <label for="email">Email</label> \
+                <input type="email" class="email"> \
+
+                <label for="phone">Phone</label> \
+                <input type="text" class="phone"> \
+
+              
+
+                <label for="message">Message</label> \
+                <textarea class="message"></textarea> \
+
+                <button type="submit" class="submit-btn">Submit</button> \
+                </form>`
+        break;
     }
   }
 });
