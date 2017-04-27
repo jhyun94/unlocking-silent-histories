@@ -203,7 +203,9 @@ $(function(){
     $(".modal").hide();
   })
 
-
+  $(".form-btn").on("click", function(){
+    $(".modal").show();
+  })
 
 });
 
