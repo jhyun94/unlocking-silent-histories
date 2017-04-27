@@ -207,6 +207,44 @@ $(function(){
     $(".modal").show();
   })
 
+  $("#form-options").on("change", function(){
+    $(".form").empty();
+    value = this.value;
+    $(".form").append(createForm(value));
+  })
+  function createForm(type){
+    switch(type){
+      case "host":
+        return `<form> \
+                <label for="name">Name</label> \
+                <input type="text" id="name"> \
+
+                <label for="email">Email</label> \
+                <input type="email" id="email"> \
+
+                <label for="phone">Phone</label> \
+                <input type="text" id="phone"> \
+
+                <label for="event-type">Type of Event</label> \
+                <input type="text" id="event-type">\
+
+                <label for="location">Location</label> \
+                <input type="text" id="location">\
+
+                <label for"date">Date</label> \
+                <input type="text" id="date" placeholder="mm/dd/year - mm/dd/year"> \
+
+                <label for="idea">Tell us about your idea and what help you need</label> \
+                <textarea id="idea"></textarea>\
+
+                <label for="message">Message</label> \
+                <textarea id="message"></textarea> \
+
+                <button type="submit" id="form-btn">Submit</button> \
+                </form>`
+        break;
+    }
+  }
 });
 
 
