@@ -75,7 +75,7 @@ $(function(){
 
 	 /* Contact form ajax Handler
     ================================================*/
-    $(".ajax-form").on("submit", function(){
+    $("body").on("submit", ".ajax-form",  function(){
       event.preventDefault();
       var form = $(this);
       var formData = $(".ajax-form").serialize();
@@ -90,8 +90,6 @@ $(function(){
             $(formMessages).addClass('success');
 
             $(formMessages).text(response);
-
-            $(".ajax-form")[0].reset();
         }).fail(function(data){
              // Make sure that the formMessages div has the 'error' class.
             $(formMessages).removeClass('success');
@@ -104,6 +102,7 @@ $(function(){
                 $(formMessages).text('Oops! An error occured and your message could not be sent.');
             }
         })
+        $(form)[0].reset();
     })
 
 
