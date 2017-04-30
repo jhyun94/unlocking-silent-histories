@@ -227,7 +227,9 @@ $(function(){
   })
 
   $(".form-btn").on("click", function(){
-    $(".modal").show();
+    var form = this.classList[2];
+    var modal = document.getElementById(form);
+    $(modal).show();
   })
 
   $("#form-options").on("change", function(){
@@ -372,6 +374,7 @@ $(function(){
         break;
     }
   }
+
 });
 
 
