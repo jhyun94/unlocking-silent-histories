@@ -1,4 +1,36 @@
-		
+    $(".ajax-form").on("submit", function(){
+      event.preventDefault();
+      var form = $(this);
+      var formData = $(".ajax-form").serialize();
+      var formMessages = $(".form-messages");
+      $.ajax({
+            type: "POST",
+            url: $(form).attr("action"),
+            data: formData,
+            dataType: "json"
+        }).done(function(response){
+            $(formMessages).removeClass('error');
+            $(formMessages).addClass('success');
+
+            $(formMessages).text(response);
+
+            $(".ajax-form")[0].reset();
+        }).fail(function(data){
+             // Make sure that the formMessages div has the 'error' class.
+            $(formMessages).removeClass('success');
+            $(formMessages).addClass('error');
+
+            // Set the message text.
+            if (data.responseText !== '') {
+                $(formMessages).text(data.responseText);
+            } else {
+                $(formMessages).text('Oops! An error occured and your message could not be sent.');
+            }
+        })
+
+    })
+
+
 $(function(){
 
 
@@ -43,46 +75,37 @@ $(function(){
 
 	 /* Contact form ajax Handler
     ================================================*/
+    $("body").on("submit", ".ajax-form",  function(){
+      event.preventDefault();
+      var form = $(this);
+      var formData = $(".ajax-form").serialize();
+      var formMessages = $(".form-messages");
+      $.ajax({
+            type: "POST",
+            url: $(form).attr("action"),
+            data: formData,
+            dataType: "json"
+        }).done(function(response){
+            $(formMessages).removeClass('error');
+            $(formMessages).addClass('success');
 
-    $(".ajax-form").on('submit', function() {
-    	var form = $(this);
-        var formURL = $(this).attr("action");
-        var postData = $(this).serializeArray();
+            $(formMessages).text(response);
+        }).fail(function(data){
+             // Make sure that the formMessages div has the 'error' class.
+            $(formMessages).removeClass('success');
+            $(formMessages).addClass('error');
 
-        $.ajax({
-            url: formURL,
-            type: 'POST',
-            data: postData,
-            dataType: 'json',
-
-            success:function(data, textStatus, jqXHR){
-
-                if(data.success==1){
-
-                    form.find(".alert").fadeOut();
-                    form.find(".alert-success").html(data.message);
-                    form.find(".alert-success").fadeIn(600);
-                    
-
-                }else{
-
-                	form.find(".alert").fadeOut();
-                    form.find(".alert-danger").html(data.message);
-                    form.find(".alert-danger").fadeIn(600);
-
-                }
-            },
-
-            error: function(jqXHR, textStatus, errorThrown)  { 
-                
-                console.log(errorThrown);
+            // Set the message text.
+            if (data.responseText !== '') {
+                $(formMessages).text(data.responseText);
+            } else {
+                $(formMessages).text('Oops! An error occured and your message could not be sent.');
             }
+        })
+        $(form)[0].reset();
+    })
 
-        });
-            
 
-        return false;
-     })
 
 
 
@@ -204,93 +227,11 @@ $(function(){
   })
 
   $(".form-btn").on("click", function(){
-    $(".modal").show();
+    var form = this.classList[2];
+    var modal = document.getElementById(form);
+    $(modal).show();
   })
 
-  $("#form-options").on("change", function(){
-    $(".form").empty();
-    value = this.value;
-    $(".form").append(createForm(value));
-  })
-  function createForm(type){
-    switch(type){
-      case "host":
-        return `<form class="forms"> \
-                <label for="name">Name</label> \
-                <input type="text" class="name"> \
-
-                <label for="email">Email</label> \
-                <input type="email" class="email"> \
-
-                <label for="phone">Phone</label> \
-                <input type="text" class="phone"> \
-
-                <label for="event-type">Type of Event</label> \
-                <input type="text" class="event-type">\
-
-                <label for="location">Location</label> \
-                <input type="text" class="location">\
-
-                <label for"date">Date</label> \
-                <input type="text" class="date" placeholder="mm/dd/year - mm/dd/year"> \
-
-                <label for="idea">Tell us about your idea and what help you need</label> \
-                <textarea class="idea"></textarea>\
-
-                <label for="message">Message</label> \
-                <textarea class="message"></textarea> \
-
-                <button type="submit" class="submit-btn">Submit</button> \
-                </form>`
-        break;
-        case "volunteer":
-        return `<form class="forms"> \
-                <label for="name">Name</label> \
-                <input type="text" class="name"> \
-
-                <label for="email">Email</label> \
-                <input type="email" class="email"> \
-
-                <label for="phone">Phone</label> \
-                <input type="text" class="phone"> \
-
-                <label for="opportunity-type">Type of Oppotunity</label> \
-                <select class="opportunity-options"> \
-                <option value=""></option> \
-                <option value="country">In Country</option> \
-                <option value="course-credit">Course Credit</option> \
-                <option value="internship">Internship</option> \
-                <option value="virtual">Virtual</option> \
-                <option value="research">Research</option>\
-                </select> \
-
-                <label for="spanish">Do you speak spanish</label> \
-                <select class="spanish"> \
-                <option value=""></option>\
-                <option value="yes">Yes</option>\
-                <option value="no">No</option> \
-                </select>\
-
-                <label for="fluent">If yes, what is your level?</label> \
-                <select class="fluent"> \
-                <option value=""></option>\
-                <option value="beginner">Beginner</option>\
-                <option value="intermediate">Intermediate</option>\
-                <option value="fluent">Fluent</option>\
-                </select>\
-
-
-                <label for="date">Date</label> \
-                <input type="text" class="date" placeholder="mm/dd/year - mm/dd/year">\
-
-                <label for="message">Message</label> \
-                <textarea class="message"></textarea> \
-
-                <button type="submit" class="submit-btn">Submit</button> \
-                </form>`
-        break;
-    }
-  }
 });
 
 

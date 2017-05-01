@@ -79,7 +79,7 @@
 
                   </button>
                   
-                  <a href="../../UnlockingSilentHistories/HTML/index.html"><img src="../../UnlockingSilentHistories/HTML/assets/images/USH_Solo.png" alt="logo" width="68" height="58"></a>
+                  <a href="index.html"><img src="assets/images/USH_Solo.png" alt="logo" width="68" height="58"></a>
                   
                 </div>
 
@@ -87,33 +87,33 @@
 
                   <ul class="nav navbar-nav">
 
-                    <li><a href="../../UnlockingSilentHistories/HTML/mission.html">MISSION</a></li>
+                    <li><a href="mission.html">MISSION</a></li>
                     <li class="has-child"><a href="#">PRODUCTIONS</a>
 
                       <ul class="submenu">
-                         <li class="submenu-item"><a href="../../UnlockingSilentHistories/HTML/guatemala.html">Guatemala </a></li>
-                         <li class="submenu-item"><a href="../../UnlockingSilentHistories/HTML/lumbee.html">Lumbee Tribe</a></li>
+                         <li class="submenu-item"><a href="guatemala.html">Guatemala </a></li>
+                         <li class="submenu-item"><a href="lumbee.html">Lumbee Tribe</a></li>
                       </ul>
 
                     </li>
                     
 					  <li class="has-child"><a class="is-active" href="#">TAKE ACTION</a>
                     <ul class="submenu">
-                         <li class="submenu-item"><a href="../../UnlockingSilentHistories/HTML/collaborate.html">Collaborate</a></li>
-                         <li class="submenu-item"><a href="../../UnlockingSilentHistories/HTML/events.html">Events </a></li>
-                         <li class="submenu-item"><a href="../../UnlockingSilentHistories/HTML/donate.html">Donate </a></li>
+                         <li class="submenu-item"><a href="collaborate.html">Collaborate</a></li>
+                         <li class="submenu-item"><a href="events.html">Events </a></li>
+                         <li class="submenu-item"><a href="donate.html">Donate </a></li>
                       </ul>
                    <li class="has-child"><a href="#">LEADERSHIP</a>
                    <ul class="submenu">
-                         <li class="submenu-item"><a href="../../UnlockingSilentHistories/HTML/teams.html">Teams</a></li>
-                         <li class="submenu-item"><a href="../../UnlockingSilentHistories/HTML/boards.html">Board </a></li>
-                         <li class="submenu-item"><a href="../../UnlockingSilentHistories/HTML/volunteers.html">Volunteers </a></li>
+                         <li class="submenu-item"><a href="teams.html">Teams</a></li>
+                         <li class="submenu-item"><a href="boards.html">Board </a></li>
+                         <li class="submenu-item"><a href="volunteers.html">Volunteers </a></li>
                       </ul>
 					  </li>
                  <li class="has-child"><a href="#">CONNECT</a>
                     <ul class="submenu">
-                         <li class="submenu-item"><a href="../../UnlockingSilentHistories/HTML/news.html">Publications </a></li>
-                         <li class="submenu-item"><a href="../../UnlockingSilentHistories/HTML/reports.html">Reports </a></li>
+                         <li class="submenu-item"><a href="news.html">Publications </a></li>
+                         <li class="submenu-item"><a href="reports.html">Reports </a></li>
                       </ul>
                   </ul>
                   
@@ -177,7 +177,7 @@
                   <div class="about-us-col">
 
                         <div class="col-icon-wrapper">
-                          <img src="../../UnlockingSilentHistories/HTML/assets/images/icons/show.png" alt="">
+                          <img src="assets/images/icons/show.png" alt="">
                         </div>
                         <h3 class="col-title">Past Shows</h3>
                         <div class="col-details">
@@ -195,7 +195,7 @@
                   <div class="about-us-col">
 
                         <div class="col-icon-wrapper">
-                          <img src="../../UnlockingSilentHistories/HTML/assets/images/icons/past.png" alt="">
+                          <img src="assets/images/icons/past.png" alt="">
                         </div>
                         <h3 class="col-title">Upcoming</h3>
                         <div class="col-details">
@@ -213,7 +213,7 @@
                   <div class="about-us-col">
 
                         <div class="col-icon-wrapper">
-                          <img src="../../UnlockingSilentHistories/HTML/assets/images/icons/talks.png" alt="">
+                          <img src="assets/images/icons/talks.png" alt="">
                         </div>
                         <h3 class="col-title">Interactives</h3>
                         <div class="col-details">
@@ -231,7 +231,7 @@
                   <div class="about-us-col">
 
                         <div class="col-icon-wrapper">
-                          <img src="../../UnlockingSilentHistories/HTML/assets/images/icons/organize.png" alt="">
+                          <img src="assets/images/icons/organize.png" alt="">
                         </div>
                         <h3 class="col-title">Organize</h3>
                         <div class="col-details">
@@ -345,37 +345,20 @@
                                     
                                     <div class="footer-form" >
                                     
-                                    <form action="../../UnlockingSilentHistories/HTML/php/mail.php" class="ajax-form">
-
+                                    <div class="form-messages">
+                                      </div>
+                                      <form action="php/mail.php" class="ajax-form" method="post">
                                         <div class="form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                          <input type="text" class="form-control" name="name" placeholder="Name" required>
                                         </div>
-
-                                         <div class="form-group">
-                                            <input type="email" name="email" class="form-control" placeholder="E-mail" required>
-                                        </div>
-
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                                          <input type="text" class="form-control" name="email" placeholder="Email" required>
                                         </div>
-
-                                        <div class="form-group alerts">
-                        
-                                            <div class="alert alert-success" role="alert">
-                                              
-                                            </div>
-
-                                            <div class="alert alert-danger" role="alert">
-                                              
-                                            </div>
-                                            
+                                        <div class="form-group">
+                                          <textarea class="form-control" name="message" placeholder="message" required></textarea>
                                         </div>
-
-                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-submit pull-right">Send message</button>
-                                        </div>
-                                        
-                                    </form>
+                                        <button type="submit" class="btn btn-submit">Submit</button>
+                                      </form>
 
                                 </div>
 

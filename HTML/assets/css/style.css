@@ -375,8 +375,12 @@ a:hover, a:focus, a:active {
 /* collaborate form button 
 ======== */
 .form-btn {
-  display: block;
+/*  display: block;
   margin: 20px auto;
+  background-color: #338E89;
+  color: #fff;
+  padding: 10px 25px;
+  border: 1px solid transparent;*/
 }
 
 
@@ -925,6 +929,22 @@ form .alert {
   .col-form {
     margin-bottom: 25px;
   }
+}
+
+/* collab buttons 
+=============== */
+.collab-btn {
+  background-color: #24706D;
+  margin-left: 2px;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.collab-btn:hover {
+  background-color: #fff;
+  color: #24706D;
+  text-decoration: none;
 }
 /* Extra Small devices (tablets, 480px and Down) */
 @media (max-width: 480px) {
