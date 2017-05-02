@@ -372,9 +372,31 @@
                         </div>
                         <button class="collab-btn"> Read More </button>
                         <button class="collab-btn form-btn partner"> Partner Up</button>
-                        <div class="modal">
+                        <div class="modal" id="partner">
                           <div class="form-content">
                             <span class="close">&times;</span>
+                            <form class="ajax-form" action="php/partner-mail.php">
+                              <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                              </div>
+
+                              <div class="form-group">
+                                <input type="text" name="email" class="form-control" placeholder="Email" required>
+                              </div>
+
+                              <div class="form-group">
+                                <label class="form-control">Organizational Partner</label>
+                                <select name="partner" class="form-control" required>
+                                  <option value="Nonprofit/organization">NonProfit/Organization</option>
+                                  <option value="Financial/Individual">Financial/Individual</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                              </div>
+                              <button type="submit" class="submit-btn">Submit</button>
+                            </form>
                           </div>
                         </div>
 			                    
