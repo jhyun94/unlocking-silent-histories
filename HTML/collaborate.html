@@ -316,9 +316,40 @@
                         </div>
                         <button class="collab-btn"> Read More </button>
                         <button class="collab-btn form-btn fundraise"> Fundraise</button>
-                        <div class="modal">
+                        <div class="modal" id="fundraise">
                           <div class="form-content">
                             <span class="close">&times;</span>
+                            <form class="ajax-form" action="php/fundraise-mail.php" method="post">
+                              <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                              </div>
+
+                              <div class="form-group">
+                                <input type="text" name="email" class="form-control" placeholder="Email" required>
+                              </div>
+
+                              <div class="form-group">
+                                <select name="type" class="form-control" required>
+                                  <option value="type">Type</option>
+                                  <option value="party">Party</option>
+                                  <option value="event">Event</option>
+                                  <option value="crowdsource">Crowdsourcing</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <input type="text" name="location" class="form-control" placeholder="Location" required>
+                              </div>
+
+                              <div class="form-group">
+                                <input type="text" name="date" class="form-control" placeholder="Date mm/dd/year - mm/dd/year" required>
+                              </div>
+
+                              <div class="form-group">
+                                <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                              </div>
+                              <button type="submit" class="submit-btn">Submit</button>
+                            </form>
                           </div>
                         </div>
 
