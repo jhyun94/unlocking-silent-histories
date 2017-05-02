@@ -55,7 +55,6 @@ $(function(){
         }).done(function(response){
             $(formMessages).removeClass('error');
             $(formMessages).addClass('success');
-
             $(form).prepend('<p>' +response + '</p>');
         }).fail(function(data){
              // Make sure that the formMessages div has the 'error' class.
