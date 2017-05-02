@@ -11,6 +11,11 @@
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
+        $opportunity = trim($_POST['opportunity']);
+        $spanish = trim($_POST['spanish']);
+        $level = trim($_POST['level']);
+        $date = trim($_POST['date']);
+
 
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -30,7 +35,11 @@
         // Build the email content.
         $email_content = "Contact form\n";
         $email_content .= "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
+        $email_content .= "Email: $email\n";
+        $email_content .= "Opportunity: $opportunity\n";
+        $email_content .= "Spanish: $spanish\n";
+        $email_content .= "Level: $level\n";
+        $email_content .= "Date: $date\n\n";
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
