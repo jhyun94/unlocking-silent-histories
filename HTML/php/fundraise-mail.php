@@ -11,11 +11,10 @@
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
-        $event = trim($_POST["eventType"]);
+        $type = trim($_POST["type"]);
         $location = trim($_POST["location"]);
-        $phone = trim($_POST["phone"]);
-        $idea = trim($_POST["idea"]);
-        $date = trim($_POST["date"]);
+        $date = trim($_POST['date']);
+
 
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -36,11 +35,9 @@
         $email_content = "Contact form\n";
         $email_content .= "Name: $name\n";
         $email_content .= "Email: $email\n";
-        $email_content .= "Phone: $phone\n";
-        $email_content .= "Event type: $event\n";
+        $email_content .= "Type: $type\n";
         $email_content .= "Location: $location\n";
-        $email_content .= "Date: $date\n";
-        $email_content .= "Idea: $idea\n\n";
+        $email_content .= "Date: $date\n\n";
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.

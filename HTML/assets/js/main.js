@@ -1,36 +1,3 @@
-    $(".ajax-form").on("submit", function(){
-      event.preventDefault();
-      var form = $(this);
-      var formData = $(".ajax-form").serialize();
-      var formMessages = $(".form-messages");
-      $.ajax({
-            type: "POST",
-            url: $(form).attr("action"),
-            data: formData,
-            dataType: "json"
-        }).done(function(response){
-            $(formMessages).removeClass('error');
-            $(formMessages).addClass('success');
-
-            $(formMessages).text(response);
-
-            $(".ajax-form")[0].reset();
-        }).fail(function(data){
-             // Make sure that the formMessages div has the 'error' class.
-            $(formMessages).removeClass('success');
-            $(formMessages).addClass('error');
-
-            // Set the message text.
-            if (data.responseText !== '') {
-                $(formMessages).text(data.responseText);
-            } else {
-                $(formMessages).text('Oops! An error occured and your message could not be sent.');
-            }
-        })
-
-    })
-
-
 $(function(){
 
 
@@ -75,10 +42,10 @@ $(function(){
 
 	 /* Contact form ajax Handler
     ================================================*/
-    $("body").on("submit", ".ajax-form",  function(){
+    $("body").on("submit", ".ajax-form", function(){
       event.preventDefault();
       var form = $(this);
-      var formData = $(".ajax-form").serialize();
+      var formData = $(form).serialize();
       var formMessages = $(".form-messages");
       $.ajax({
             type: "POST",
@@ -86,24 +53,25 @@ $(function(){
             data: formData,
             dataType: "json"
         }).done(function(response){
-            $(formMessages).removeClass('error');
-            $(formMessages).addClass('success');
-
-            $(formMessages).text(response);
+          console.log(response);
+            $(form).text(response);
         }).fail(function(data){
              // Make sure that the formMessages div has the 'error' class.
-            $(formMessages).removeClass('success');
-            $(formMessages).addClass('error');
-
             // Set the message text.
             if (data.responseText !== '') {
-                $(formMessages).text(data.responseText);
+                $(form).text(data.responseText);
             } else {
-                $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                $(form).text('Oops! An error occured and your message could not be sent.');
             }
         })
         $(form)[0].reset();
     })
+
+  $(".form-btn").on("click", function(){
+    var form = this.classList[2];
+    var modal = document.getElementById(form);
+    $(modal).show();
+  })
 
 
 
@@ -224,12 +192,6 @@ $(function(){
 
   $(".close").on("click", function(){
     $(".modal").hide();
-  })
-
-  $(".form-btn").on("click", function(){
-    var form = this.classList[2];
-    var modal = document.getElementById(form);
-    $(modal).show();
   })
 
 });
