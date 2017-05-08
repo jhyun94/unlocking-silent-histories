@@ -194,6 +194,16 @@ $(function(){
     $(".modal").hide();
   })
 
+  $(".video-btn").on("click", function(){
+    $(".video-modal").show();
+    $("body").css("overflow", "hidden");
+  })
+
+  $(".video-close").on("click", function(){
+    $(".video-modal").hide();
+    $("body").css("overflow", "scroll");
+  })
+
 });
 
 
