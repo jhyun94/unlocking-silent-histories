@@ -724,8 +724,11 @@ form .alert {
   overflow: auto;
 }
 
+.video-content {
+  padding-top: 10%;
+}
 .video-close {
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
   position: absolute;
   right: 35px;
