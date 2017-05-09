@@ -709,7 +709,43 @@ form .alert {
 .panel-default > .panel-heading:hover {
   background: #338e89;
 }
+/* video modal
+======================== */
+.video-modal{
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
 
+.video-content {
+  padding-top: 10%;
+}
+.video-close {
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  right: 35px;
+  top: 15px;
+}
+
+.video-btn {
+  height: 200px;
+  padding-bottom: 20px;
+}
+.video-close:hover {
+  cursor: pointer;
+}
+
+.video-btn:hover {
+  cursor: pointer;
+}
 /* Modal
 ================================= */
 .modal .modal-content {

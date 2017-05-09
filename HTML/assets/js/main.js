@@ -193,6 +193,25 @@ $(function(){
   $(".close").on("click", function(){
     $(".modal").hide();
   })
+  // Video modal
+
+  $(".video-btn").on("click", function(){
+    $(".video-content").empty();
+    $(".video-content").html(loadVideo(this));
+    $(".video-modal").show();
+    $("body").css("overflow", "hidden");
+  })
+
+  $(".video-close").on("click", function(){
+    $(".video-modal").hide();
+    $("body").css("overflow", "scroll");
+  })
+
+  function loadVideo(video){
+    return `<center><iframe src="${video.dataset["link"]}" \
+    width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>\
+    </iframe></center>`
+  }
 
 });
 
