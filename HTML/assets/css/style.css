@@ -735,6 +735,10 @@ form .alert {
   top: 15px;
 }
 
+.video-btn {
+  height: 200px;
+  padding-bottom: 20px;
+}
 .video-close:hover {
   cursor: pointer;
 }
