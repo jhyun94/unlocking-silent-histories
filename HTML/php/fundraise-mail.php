@@ -13,7 +13,9 @@
         $message = trim($_POST["message"]);
         $type = trim($_POST["type"]);
         $location = trim($_POST["location"]);
-        $date = trim($_POST['date']);
+        $start = trim($_POST['start']);
+        $end = trim($_POST["end"]);
+
 
 
         // Check that data was sent to the mailer.
@@ -37,7 +39,8 @@
         $email_content .= "Email: $email\n";
         $email_content .= "Type: $type\n";
         $email_content .= "Location: $location\n";
-        $email_content .= "Date: $date\n\n";
+        $email_content .= "Start Date: $start\n";
+        $email_content .= "End Date: $end\n\n";
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
