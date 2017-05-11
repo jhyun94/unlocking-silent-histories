@@ -15,7 +15,8 @@
         $location = trim($_POST["location"]);
         $phone = trim($_POST["phone"]);
         $idea = trim($_POST["idea"]);
-        $date = trim($_POST["date"]);
+        $start = trim($_POST["start"]);
+        $end = trim($_POST["end"]);
 
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -27,7 +28,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "hyunjonathan@gmail.com";
+        $recipient = "info@unlockingsilenthistories.org";
 
         // Set the email subject.
         $subject = "New contact from $name";
@@ -39,7 +40,8 @@
         $email_content .= "Phone: $phone\n";
         $email_content .= "Event type: $event\n";
         $email_content .= "Location: $location\n";
-        $email_content .= "Date: $date\n";
+        $email_content .= "Starting Date: $start\n";
+        $email_content .= "Ending Date: $end\n";
         $email_content .= "Idea: $idea\n\n";
         $email_content .= "Message:\n$message\n";
 
