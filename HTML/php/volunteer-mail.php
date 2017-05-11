@@ -14,7 +14,8 @@
         $opportunity = trim($_POST['opportunity']);
         $spanish = trim($_POST['spanish']);
         $level = trim($_POST['level']);
-        $date = trim($_POST['date']);
+        $start = trim($_POST['start']);
+        $end = trim($_POST['end']);
 
 
         // Check that data was sent to the mailer.
@@ -39,7 +40,8 @@
         $email_content .= "Opportunity: $opportunity\n";
         $email_content .= "Spanish: $spanish\n";
         $email_content .= "Level: $level\n";
-        $email_content .= "Date: $date\n\n";
+        $email_content .= "Start Date: $start\n";
+        $email_content .= "End Date: $end\n\n";
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
