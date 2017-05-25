@@ -220,15 +220,12 @@ $(function(){
     $(".panel").css("width", width);
     $(".panel").css("height", height);
   })
-
-  // $(".video-btn").hover(function(){
-  //   var panel = $(this).next(".panel");
-  //   $(panel).show();
-  //   },function(){
-  //     var panel = $(this).next(".panel");
-  //     $(panel).hide();
-  //   }
-  // });
+  $(window).on("resize", function(){
+    var width = $(".video-btn").width();
+    var height = $(".video-btn").height();
+    $(".panel").css("width", width);
+    $(".panel").css("height", height);
+  });
 
   $(".video-btn").mouseover(function(){
     var panel = $(this).next(".panel");
