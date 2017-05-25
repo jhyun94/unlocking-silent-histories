@@ -756,6 +756,7 @@ form .alert {
   top: 0;
   display: none;
   text-align: center;
+  cursor: pointer;
 }
 /* Modal
 ================================= */

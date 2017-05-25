@@ -220,13 +220,24 @@ $(function(){
     $(".panel").css("width", width);
     $(".panel").css("height", height);
   })
-  $(".video-btn").mouseenter(function(){
+
+  // $(".video-btn").hover(function(){
+  //   var panel = $(this).next(".panel");
+  //   $(panel).show();
+  //   },function(){
+  //     var panel = $(this).next(".panel");
+  //     $(panel).hide();
+  //   }
+  // });
+
+  $(".video-btn").mouseover(function(){
     var panel = $(this).next(".panel");
-    $(panel).slideDown("slow");
-    $(panel).mouseleave(function(){
-      $(panel).slideUp("slow");
-    })
+    $(panel).slideDown('slow');
   });
+  $(".panel").mouseleave(function(){
+    $(this).slideUp('slow');
+  })
+
 
 });
 
