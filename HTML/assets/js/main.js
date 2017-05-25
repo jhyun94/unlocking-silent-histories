@@ -195,8 +195,9 @@ $(function(){
   })
   // Video modal
 
-  $(".video-btn").on("click", function(){
+  $(".panel").on("click", function(){
     $(".video-content").empty();
+    debugger;
     $(".video-content").html(loadVideo(this));
     $(".video-modal").show();
     $("body").css("overflow", "hidden");
@@ -212,6 +213,28 @@ $(function(){
     width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>\
     </iframe></center>`
   }
+
+  $(window).on("load", function(){
+    var width = $(".video-btn").width();
+    var height = $(".video-btn").height();
+    $(".panel").css("width", width);
+    $(".panel").css("height", height);
+  })
+  $(window).on("resize", function(){
+    var width = $(".video-btn").width();
+    var height = $(".video-btn").height();
+    $(".panel").css("width", width);
+    $(".panel").css("height", height);
+  });
+
+  $(".video-btn").mouseover(function(){
+    var panel = $(this).next(".panel");
+    $(panel).slideDown('slow');
+  });
+  $(".panel").mouseleave(function(){
+    $(this).slideUp('slow');
+  })
+
 
 });
 
