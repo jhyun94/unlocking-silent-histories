@@ -739,6 +739,7 @@ form .alert {
   height: 200px;
   width: 300px;
   padding-bottom: 25px;
+  position: relative;
 }
 
 .video-close:hover {
@@ -747,6 +748,14 @@ form .alert {
 
 .video-btn:hover {
   cursor: pointer;
+}
+.panel {
+  background-color: #353535;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  display: none;
+  text-align: center;
 }
 /* Modal
 ================================= */
