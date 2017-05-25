@@ -195,8 +195,9 @@ $(function(){
   })
   // Video modal
 
-  $(".video-btn").on("click", function(){
+  $(".panel").on("click", function(){
     $(".video-content").empty();
+    debugger;
     $(".video-content").html(loadVideo(this));
     $(".video-modal").show();
     $("body").css("overflow", "hidden");
