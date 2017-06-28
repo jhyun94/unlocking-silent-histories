@@ -15,7 +15,7 @@ html,body {
 }
 body {
   font-family: "Open sans", sans-serif;
-  color: #24706d;
+  color: #004f4f;
 }
 
 h1,
@@ -44,7 +44,7 @@ a:hover, a:focus, a:active {
 }
 
 .navbar-top {
-  background: #24706d;
+  background: #004f4f;
   font-size: 12px;
   padding: 3px 0;
 }
@@ -61,7 +61,7 @@ a:hover, a:focus, a:active {
 .navbar-main {
   margin-bottom: 0;
   color: #fff;
-  background: #338e89;
+  background: #008080;
 }
 .navbar-main .navbar-brand {
   border-bottom: 2px !important;
@@ -77,7 +77,7 @@ a:hover, a:focus, a:active {
 .navbar-main .submenu {
   position: absolute;
   list-style: none;
-  background: #338e89;
+  background: #008080;
   padding: 0;
   width: 150px;
   left: -35px;
@@ -89,10 +89,10 @@ a:hover, a:focus, a:active {
   transition: all, 0.05s;
 }
 .navbar-main .submenu li {
-  border-top: 1px solid #24706d;
+  border-top: 1px solid #004f4f;
 }
 .navbar-main .submenu li:hover {
-  background: #338e89;
+  background: #008080;
   -moz-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   -webkit-transition: all, 0.3s;
@@ -130,7 +130,7 @@ a:hover, a:focus, a:active {
   width: 100%;
 }
 .carousel-home .carousel-control {
-  background: #338e89;
+  background: #008080;
   height: 80px;
   width: 40px;
   top: 50%;
@@ -181,11 +181,11 @@ a:hover, a:focus, a:active {
   height: 325px;
   padding: 25px;
   text-align: center;
-  background-color: #24706d;
+  background-color: #004f4f;
   background-size: 100%;
-  background-image: -moz-linear-gradient(290deg, #24706d -25%, #338e89 50%, #24706d 125%);
-  background-image: -webkit-linear-gradient(290deg, #24706d -25%, #338e89 50%, #24706d 125%);
-  background-image: linear-gradient(160deg, #24706d -25%, #338e89 50%, #24706d 125%);
+  background-image: -moz-linear-gradient(290deg, #004f4f -25%, #008080 50%, #004f4f 125%);
+  background-image: -webkit-linear-gradient(290deg, #004f4f -25%, #008080 50%, #004f4f 125%);
+  background-image: linear-gradient(160deg, #004f4f -25%, #008080 50%, #004f4f 125%);
   color: #fff;
 }
 .about-us-col .col-icon-wrapper {
@@ -268,7 +268,7 @@ a:hover, a:focus, a:active {
 .cause {
   padding-bottom: 15px;
   margin-bottom: 30px;
-  border: 1px solid #24706d;
+  border: 1px solid #004f4f;
   -moz-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   -webkit-transition: all, 0.3s;
@@ -276,11 +276,11 @@ a:hover, a:focus, a:active {
 }
 .cause .cause-progress {
   margin: 0 10px 15px;
-  border: 1px solid #24706d;
+  border: 1px solid #004f4f;
   border-radius: 3px;
 }
 .cause .cause-progress .progress-bar {
-  background: #24706d;
+  background: #004f4f;
   box-shadow: none;
 }
 .cause .cause-img {
@@ -301,18 +301,18 @@ a:hover, a:focus, a:active {
 }
 .cause:hover {
   background: #f0f0f0;
-  color: #24706d;
-  border-color: #24706d;
+  color: #004f4f;
+  border-color: #004f4f;
 }
 
 /* Team 
 ================================= */
 .team-member {
-  background: #338e89;
+  background: #008080;
   color: #fff;
   text-align: center;
   padding-bottom: 15px;
-  border: 1px solid #338e89;
+  border: 1px solid #008080;
 }
 .team-member .thumnail img {
   width: 100%;
@@ -377,7 +377,7 @@ a:hover, a:focus, a:active {
 .form-btn {
 /*  display: block;
   margin: 20px auto;
-  background-color: #338E89;
+  background-color: #008080;
   color: #fff;
   padding: 10px 25px;
   border: 1px solid transparent;*/
@@ -402,12 +402,12 @@ input[type="text"], label, input[type="email"], textarea{
 /* footer 
 ================================= */
 .footer-top {
-  background: #24706d;
+  background: #004f4f;
   height: 40px;
 }
 
 .main-footer {
-  background: #338e89;
+  background: #008080;
   color: #fff;
 }
 .main-footer .footer-main {
@@ -437,7 +437,7 @@ input[type="text"], label, input[type="email"], textarea{
   content: "";
   height: 1px;
   display: block;
-  background: #24706d;
+  background: #004f4f;
   width: 150px;
   margin: 15px auto;
 }
@@ -446,7 +446,7 @@ input[type="text"], label, input[type="email"], textarea{
 }
 
 .footer-bottom {
-  background: #24706d;
+  background: #004f4f;
   padding: 3px;
 }
 
@@ -454,7 +454,7 @@ input[type="text"], label, input[type="email"], textarea{
   margin-bottom: 5px;
 }
 .footer-form .form-control {
-  background: #24706d;
+  background: #004f4f;
   color: #fff;
   border: 0;
   border-radius: 0;
@@ -464,7 +464,7 @@ input[type="text"], label, input[type="email"], textarea{
 }
 .footer-form .btn-submit {
   border-radius: 0;
-  background: #24706d;
+  background: #004f4f;
   text-transform: uppercase;
   border: 1px solid #fff;
   -moz-transition: all, 0.5s;
@@ -537,7 +537,7 @@ input[type="text"], label, input[type="email"], textarea{
   display: inline-block;
   width: 35px;
   height: 35px;
-  background: #338e89;
+  background: #008080;
   vertical-align: middle;
   margin-right: 5px;
   color: #fff;
@@ -571,7 +571,7 @@ form .alert {
 	Module
 ========================================================================== */
 .btn-primary {
-  background: #24706d;
+  background: #004f4f;
   border: none;
   border-radius: 0;
   padding: 10px 25px;
@@ -583,17 +583,17 @@ form .alert {
 }
 .btn-primary:hover {
   background: #fff;
-  color: #24706d;
-  border: 1px solid #338e89;
+  color: #004f4f;
+  border: 1px solid #008080;
 }
 
 .btn-secondary {
   background: #fff;
-  color: #338e89;
+  color: #008080;
   border-radius: 0;
 }
 .btn-secondary:hover {
-  background: #338e89;
+  background: #008080;
   color: #fff;
 }
 
@@ -622,7 +622,7 @@ form .alert {
 .title-under {
   display: block;
   margin: 5px auto;
-  background: #24706d;
+  background: #004f4f;
   height: 1px;
   width: 280px;
 }
@@ -646,40 +646,40 @@ form .alert {
 /* Tabeles
 ================================= */
 .table-style-1 thead {
-  background: #338e89;
-  border-bottom: 1px solid #24706d;
+  background: #008080;
+  border-bottom: 1px solid #004f4f;
   color: #fff;
 }
 .table-style-1 td,
 .table-style-1 th {
-  border-bottom: 1px solid #24706d;
+  border-bottom: 1px solid #004f4f;
 }
 
 .table-style-2 thead {
   background: #115c9b;
-  border-bottom: 1px solid #24706d;
+  border-bottom: 1px solid #004f4f;
   color: #fff;
 }
 .table-style-2 tbody tr:nth-child(even) {
-  background: #338e89;
+  background: #008080;
   color: #fff;
 }
 .table-style-2 td,
 .table-style-2 th {
-  border-bottom: 1px solid #24706d;
+  border-bottom: 1px solid #004f4f;
 }
 
 /* Tabs
 ================================= */
 .nav-tabs {
-  border-bottom-color: #24706d;
+  border-bottom-color: #004f4f;
   margin-bottom: 15px;
 }
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  background: #338e89;
+  background: #008080;
   color: #fff;
 }
 
@@ -688,26 +688,26 @@ form .alert {
 }
 
 .nav-tabs > li > a:hover {
-  border-color: #338e89 #338e89 #338e89 #24706d;
+  border-color: #008080 #008080 #008080 #004f4f;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background: #24706d;
+  background: #004f4f;
   color: #fff;
 }
 
 /* Accordion
 ================================= */
 .panel-default {
-  border-color: #338e89;
+  border-color: #008080;
   border-radius: 0;
 }
 .panel-default > .panel-heading {
-  background: #338e89;
+  background: #008080;
   color: #fff;
 }
 .panel-default > .panel-heading:hover {
-  background: #338e89;
+  background: #008080;
 }
 /* video modal
 ======================== */
@@ -764,7 +764,7 @@ form .alert {
   border-radius: 0;
 }
 .modal .modal-header {
-  background: #338e89;
+  background: #008080;
   color: #fff;
 }
 .modal .modal-header .close {
@@ -952,8 +952,8 @@ form .alert {
   .navbar-main li:hover .submenu li,
   .navbar-main li:active .submenu li,
   .navbar-main li:focus .submenu li {
-    background: #24706d;
-    border-top-color: #338e89;
+    background: #004f4f;
+    border-top-color: #008080;
   }
 
   .carousel-home .carousel-title {
@@ -963,7 +963,7 @@ form .alert {
     font-size: 16px;
   }
   .carousel-home .carousel-control {
-    background: #338e89;
+    background: #008080;
     height: 40px;
     width: 20px;
     top: 50%;
@@ -982,7 +982,7 @@ form .alert {
 /* collab buttons 
 =============== */
 .collab-btn {
-  background-color: #24706D;
+  background-color: #004f4f;
   margin-left: 2px;
   padding: 10px;
   text-decoration: none;
@@ -991,7 +991,7 @@ form .alert {
 
 .collab-btn:hover {
   background-color: #fff;
-  color: #24706D;
+  color: #004f4f;
   text-decoration: none;
 }
 /* Extra Small devices (tablets, 480px and Down) */

@@ -229,10 +229,10 @@ $(function(){
 
   $(".video-btn").mouseover(function(){
     var panel = $(this).next(".panel");
-    $(panel).slideDown(500);
+    $(panel).slideDown('fast');
   });
   $(".panel").mouseleave(function(){
-    $(this).slideUp(500);
+    $(this).slideUp('fast');
   })
 
 
