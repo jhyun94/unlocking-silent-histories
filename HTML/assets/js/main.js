@@ -195,9 +195,8 @@ $(function(){
   })
   // Video modal
 
-  $(".panel").on("click", function(){
+  $(".img__description").on("click", function(){
     $(".video-content").empty();
-    debugger;
     $(".video-content").html(loadVideo(this));
     $(".video-modal").show();
     $("body").css("overflow", "hidden");
@@ -217,23 +216,23 @@ $(function(){
   $(window).on("load", function(){
     var width = $(".video-btn").width();
     var height = $(".video-btn").height();
-    $(".panel").css("width", width);
-    $(".panel").css("height", height);
+    $(".img__description").css("width", width);
+    $(".img__description").css("height", height);
   })
   $(window).on("resize", function(){
     var width = $(".video-btn").width();
     var height = $(".video-btn").height();
-    $(".panel").css("width", width);
-    $(".panel").css("height", height);
+    $(".img__description").css("width", width);
+    $(".img__description").css("height", height);
   });
 
-  $(".video-btn").mouseover(function(){
-    var panel = $(this).next(".panel");
-    $(panel).slideDown('fast');
-  });
-  $(".panel").mouseleave(function(){
-    $(this).slideUp('fast');
-  })
+  // $(".video-btn").mouseover(function(){
+  //   var panel = $(this).next(".panel");
+  //   $(panel).slideDown('fast');
+  // });
+  // $(".panel").mouseleave(function(){
+  //   $(this).slideUp('fast');
+  // })
 
 
 });

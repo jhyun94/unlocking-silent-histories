@@ -739,7 +739,7 @@ form .alert {
   height: 200px;
   width: 300px;
   padding-bottom: 25px;
-  position: relative;
+/*  position: relative;*/
 }
 
 .video-close:hover {
@@ -754,10 +754,34 @@ form .alert {
   color: #fff;
   position: absolute;
   top: 0;
-  display: none;
+  visibility: hidden;
   text-align: center;
   cursor: pointer;
 }
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__description:hover {
+  cursor: pointer;
+}
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 /* Modal
 ================================= */
 .modal .modal-content {
