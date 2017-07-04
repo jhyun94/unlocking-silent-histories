@@ -767,11 +767,15 @@ form .alert {
   color: #fff;
   visibility: hidden;
   opacity: 0;
+  text-align: center;
 
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
 
+.img__description:hover {
+  cursor: pointer;
+}
 .img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
